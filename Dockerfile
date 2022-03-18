@@ -15,22 +15,36 @@ RUN dpkg --add-architecture i386 \
         clang                       \
         cmake                       \
         curl                        \
+        elfutils                    \
+        fakeroot                    \
         file                        \
+        g++-multilib                \
+        gcc-multilib                \
         git                         \
         gnupg                       \
+        lib32tinfo-dev              \
         lib32z1                     \
         libbz2-1.0:i386             \
+        libbz2-dev:amd64            \
         libc6:i386                  \
         libncurses5:i386            \
+        libncurses5-dev:amd64       \
+        libncursesw5-dev:amd64      \
+        libpcre2-dev:amd64          \
+        libpcre3-dev:amd64          \
+        libreadline-dev:amd64       \
         libstdc++6:i386             \
+        linux-libc-dev:amd64        \
         make                        \
         musl-dev                    \
         musl-tools                  \
+        netbase                     \
         ninja-build                 \
         perl                        \
         pkg-config                  \
         pv                          \
         screen                      \
+        ssh-client                  \
         software-properties-common  \
         sudo                        \
         time                        \
@@ -38,6 +52,7 @@ RUN dpkg --add-architecture i386 \
         vim                         \
         wget                        \
         xz-utils                    \
+        zlib1g-dev:amd64            \
         zip                         \
     && \
     apt-get clean && \
